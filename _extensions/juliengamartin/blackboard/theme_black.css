@@ -1,0 +1,123 @@
+.framed {
+ display: inline-block;
+ border-style: solid;
+ padding: 10px;  
+ border-width: 15px 15px 15px 15px;
+ border-image: url("frame2.png") 20% 20% 20% 20% stretch;
+}
+
+pre, code {
+ background-color: rgba(255, 255, 255, 0.05) !important;
+ border-style: solid;
+ border-width: 5px 5px 5px 5px;
+ border-image: url(frame.png) 10% 0% 40% 20% stretch;
+}
+
+.reveal ol, .reveal dl, .reveal ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li{
+ font-family: Pangolin;
+ padding-left: 30px;
+ background: url('dot.png') no-repeat left top;
+}
+
+/* h2{
+ width:1107px;
+ background-image: url(underline.png);
+ background-position: 0 1em;
+ background-repeat: repeat-x;
+ background-size: 1107px 12px;
+} */
+
+/*Headings*/
+.reveal h1 {
+  font-weight: 800;
+  color: rgb(188, 75, 220);
+  text-align: center;
+  background-image: url(underline.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 90% 15%;
+}
+
+.reveal h2 {
+  font-weight: 700;
+  color: rgb(50, 181, 193);
+  background-image: url(underline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 90% 15%;
+}
+
+.reveal h3 {
+  color: rgb(222, 112, 47);
+  font-weight: 600;
+  /*background-image: url("figures/chalk1-white.png");
+ background-repeat: no-repeat; Do not repeat the image 
+ background-position: center;
+ background-size: 100% 50%;*/
+}
+
+
+
+/* my extra */
+
+.center {
+  text-align: center
+}
+
+.emph {
+  font-size: 1.5em;
+  color: rgb(222, 112, 47);
+  font-weight: 600;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.large {
+  font-size: 1.5em;
+}
+
+.huge {
+  font-size: 2em;
+}
+
+/* title slide */
+
+.reveal .quarto-title-block .quarto-title-authors {
+  display: flex;
+  justify-content: right;
+  font-size: 1.1em;
+}
+
+#title-slide,
+div.reveal div.slides section.quarto-title-block {
+  text-align: right;
+}
+
+#title-slide .title,
+div.reveal div.slides section.quarto-title-block .title {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  font-size: 2em
+}
+
+#title-slide .subtitle,
+div.reveal div.slides section.quarto-title-block .subtitle {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  font-size: 1.5em
+}
+
+#title-slide .date,
+div.reveal div.slides section.quarto-title-block .date {
+  text-align: right;
+  margin-bottom: 2.5rem;
+  font-size: 0.7em
+}

@@ -1,0 +1,14 @@
+title: Blackboard Theme 
+author: Julien Martin
+version: 1.0.0
+contributes:
+  formats:
+    revealjs:
+      slide-number: true
+      menu: false
+      progress: true
+      filters: [imgs.lua]
+      theme: [default, blackboard.scss]
+      css: theme_black.css
+      title-slide-attributes:
+        data-background-image: blackboard.png

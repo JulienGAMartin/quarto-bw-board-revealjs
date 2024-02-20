@@ -1,0 +1,14 @@
+title: Whiteboard Theme 
+author: Julien Martin
+version: 1.0.0
+contributes:
+  formats:
+    revealjs:
+      slide-number: true
+      menu: false
+      progress: true
+      filters: [imgs.lua]
+      theme: [default, whiteboard.scss]
+      css: theme_white.css
+      title-slide-attributes:
+        data-background-image: whiteboard.png
