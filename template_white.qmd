@@ -6,12 +6,14 @@ date: today
 institute: "University of Ottawa"
 format: whiteboard-revealjs
 ---
+# First section
 
 <!-- needed if you want the ggplot theme associated -->
 ```{r}
 #| label: gg-theme
-#| include: false 
-source("_extensions/juliengamartin/whiteboard/themes_board.r")
+#| include: false
+source("_extensions/juliengamartin/themes_board.r")
+theme_set(theme_blackboard())
 ```
 
 ## Code style and ggplot theme
@@ -24,8 +26,6 @@ source("_extensions/juliengamartin/whiteboard/themes_board.r")
 ggplot(cars) +
   geom_point(aes(speed,dist))
 ```
-
-# main section
 
 ## Images and text with frame
 

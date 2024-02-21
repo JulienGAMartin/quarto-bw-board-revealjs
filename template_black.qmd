@@ -5,12 +5,14 @@ author: "Julien Martin"
 institute: "University of Ottawa"
 format: blackboard-revealjs
 ---
+# First section
 
 <!-- needed if you want the ggplot theme associated -->
 ```{r}
 #| label: gg-theme
 #| include: false 
-source("_extensions/juliengamartin/blackboard/themes_board.r")
+source("_extensions/juliengamartin/themes_board.r")
+theme_set(theme_blackboard())
 ```
 
 ## Code style and ggplot theme
