@@ -9,10 +9,11 @@ format: blackboard-revealjs
 
 <!-- needed if you want the ggplot theme associated -->
 ```{r}
-#| label: gg-theme
-#| include: false 
-source("_extensions/juliengamartin/themes_board.r")
+#| label: setup-slides
+#| include: false
+source("themes_board.r")
 theme_set(theme_blackboard())
+def_col_geom("white")
 ```
 
 ## Code style and ggplot theme
@@ -22,10 +23,9 @@ theme_set(theme_blackboard())
 #| fig.width: 12
 #| fig.align: 'center'
 #| echo: true
-ggplot(cars) +
-  geom_point(aes(speed,dist), color="white")
+ggplot(cars, aes(speed,dist)) +
+  geom_point()
 ```
-Given the dark background you need to define the color of the points
 
 ## Images and text with frame
 

@@ -7,7 +7,7 @@ contributes:
       slide-number: true
       menu: false
       progress: true
-      filters: [imgs.lua]
+#      filters: [imgs.lua]
       theme: [default, whiteboard.scss]
       css: theme_white.css
       title-slide-attributes:

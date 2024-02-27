@@ -7,8 +7,8 @@ contributes:
       slide-number: true
       menu: false
       progress: true
-      filters: [imgs.lua]
-      theme: [default, blackboard.scss]
+#      filters: [imgs.lua]
+      theme: [dark, blackboard.scss]
       css: theme_black.css
       title-slide-attributes:
         data-background-image: blackboard.png

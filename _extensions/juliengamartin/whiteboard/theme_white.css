@@ -1,3 +1,7 @@
+.slide-background-content {
+  background-image: url("whiteboard.png");
+  background-size: 100% 100%;
+}
 .framed {
  display: inline-block;
  border-style: solid;
@@ -18,7 +22,12 @@ pre, code {
   border: 0px solid #fff;
 }
 
-.reveal ol, .reveal dl, .reveal ul{
+.reveal code.sourceCode {
+  font-size: 1.3em;
+}
+
+/*.reveal ol,*/
+./*reveal dl, .reveal ul{
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -28,7 +37,7 @@ li{
  font-family: Pangolin;
  padding-left: 30px;
  background: url('dot.png') no-repeat left top;
-}
+}*/
 
 /* h2{
  width:1107px;
@@ -125,4 +134,29 @@ div.reveal div.slides section.quarto-title-block .date {
   text-align: right;
   margin-bottom: 2.5rem;
   font-size: 0.7em
+}
+
+/* Panel tabset*/
+
+.panel-tabset [role=tablist] {
+  border-bottom: 0px solid #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: url("underline.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 90% 15%;
+}
+
+@media(min-width: 30em) {
+  .panel-tabset [role=tab][aria-selected=true] {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    padding: 10px;
+    border-width: 5px 5px 5px 5px;
+    border-image: url("frame2.png") 20% 20% 20% 20% stretch;
+    text-decoration: none
+  }
 }
